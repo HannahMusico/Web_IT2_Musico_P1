@@ -45,7 +45,7 @@
                 
                 <tr>
                     <td class="auto-style3">
-                        <asp:Label ID="Label1" runat="server" Text="Username ABCD"></asp:Label>
+                        <asp:Label ID="Label1" runat="server" Text="Username ABCD 555"></asp:Label>
                     </td>
                     <td class="auto-style2">
                         <asp:TextBox ID="txtUsername" runat="server" ToolTip="Enter username"></asp:TextBox>
