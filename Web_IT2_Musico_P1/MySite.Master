@@ -11,7 +11,7 @@
     </asp:ContentPlaceHolder>--%>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - Web System and Technology</title>
+    <title><%: Page.Title %> - Web System and Technology </title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -60,6 +60,7 @@
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/About">About</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contact</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/MyPageMusico">My Page Musico</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/PrelimExam">Prelim Exam</a></li>
                     </ul>
                 </div>
             </div>
