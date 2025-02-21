@@ -23,7 +23,7 @@
                             <asp:Label ID="lblStudentNum" runat="server" Text="Student Number:"></asp:Label>
                         </td>
                         <td class="auto-style2">
-                            <asp:TextBox ID="txtStudentNum" runat="server" ToolTip="Enter your student number" ></asp:TextBox>
+                            <asp:TextBox ID="txtStudentNum" runat="server" ToolTip="Enter your student number" Class="form-control mb-3" ></asp:TextBox>
                         </td>
                     </tr>
                     <%--STUDENT NAME--%>
@@ -56,7 +56,7 @@
                             <asp:Label ID="lblYearLevel" runat="server" Text="Year Level:"></asp:Label>
                         </td>
                         <td class="auto-style2">
-                            <asp:DropDownList ID="ddlYearLevel" runat="server" >
+                            <asp:DropDownList ID="ddlYearLevel" runat="server" class="form-select form-select-lg mb-3" >
                                 <asp:ListItem Value=""></asp:ListItem>
                                 <asp:ListItem>First </asp:ListItem>
                                 <asp:ListItem>Second</asp:ListItem>
