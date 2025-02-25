@@ -121,6 +121,8 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Images\logo.jpg" />
+    <Content Include="MyBootstrap5.aspx" />
     <Content Include="MyPage2.aspx" />
     <Content Include="MyPageMusico.aspx" />
     <Content Include="MyPrelimExam.aspx" />
@@ -212,6 +214,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MyBootstrap5.aspx.cs">
+      <DependentUpon>MyBootstrap5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyBootstrap5.aspx.designer.cs">
+      <DependentUpon>MyBootstrap5.aspx</DependentUpon>
     </Compile>
     <Compile Include="MyPage2.aspx.cs">
       <DependentUpon>MyPage2.aspx</DependentUpon>
