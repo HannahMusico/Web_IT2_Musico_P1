@@ -61,6 +61,8 @@
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contact</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/MyPageMusico">My Page Musico</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/MyPrelimExam">Prelim Exam</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/MyBootstrap5">My Bootstrap</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/UserInfoPage">User Info</a></li>
                     </ul>
                 </div>
             </div>
@@ -69,11 +71,11 @@
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-                <hr />
-                <footer>
-                    <p>&copy; <%: DateTime.Now.Year %> - Web System and Technology 2nd Sem 2024-2025</p>
-                </footer>
-            
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - Web System and Technology 2nd Sem 2024-2025</p>
+            </footer>
+
         </div>
 
     </form>
