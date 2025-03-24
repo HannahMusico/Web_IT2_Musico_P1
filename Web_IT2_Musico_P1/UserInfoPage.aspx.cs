@@ -9,6 +9,9 @@ namespace Web_IT2_Musico_P1
 {
     public partial class UserInfoPage : System.Web.UI.Page
     {
-       
+        protected void DetailsView1_PageIndexChanging(object sender, DetailsViewPageEventArgs e)
+        {
+
+        }
     }
 }
