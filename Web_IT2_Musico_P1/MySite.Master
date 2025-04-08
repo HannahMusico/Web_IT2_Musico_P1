@@ -63,6 +63,10 @@
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/MyPrelimExam">Prelim Exam</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/MyBootstrap5">My Bootstrap</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/UserInfoPage">User Info</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/CollegeInfoPage">College Info</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/CourseInfoPage">Course Info</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/MajorInfoPage">Major Info</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/RoleInfoPage">Role Info</a></li>
                     </ul>
                 </div>
             </div>

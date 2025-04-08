@@ -7,8 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Web_IT2_Musico_P1
 {
-    public partial class UserInfoPage : System.Web.UI.Page
+    public partial class RoleInfoPage : System.Web.UI.Page
     {
-        
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
