@@ -31,7 +31,7 @@
 
     <asp:SqlDataSource ID="SqlDSRoleInsert" runat="server" 
         ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
-        InsertCommand="INSERT INTO tblRole(roleType, roleID) VALUES (?, ?)" 
+        InsertCommand="INSERT INTO tblRole(roleID, roleType) VALUES (?, ?)" 
         ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" 
         SelectCommand="SELECT roleID, roleType FROM tblRole"></asp:SqlDataSource>
 

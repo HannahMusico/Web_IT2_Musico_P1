@@ -53,7 +53,7 @@
 
     <asp:SqlDataSource ID="SqlDSMajorInsert" runat="server" 
         ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
-        InsertCommand="INSERT INTO tblCouseMajor(majorCode, majorID, majorName, courseID) VALUES (?, ?, ?, ?)" 
+        InsertCommand="INSERT INTO tblCouseMajor(majorID, majorCode, majorName, courseID) VALUES (?, ?, ?, ?)" 
         ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" 
         SelectCommand="SELECT majorID, majorCode, majorName, courseID FROM tblCouseMajor"></asp:SqlDataSource>
 
