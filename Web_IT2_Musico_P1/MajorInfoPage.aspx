@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False"
         CssClass="table table-bordered table-hover table-striped" DataSourceID="SqlDataSource1" CellPadding="10" CellSpacing="10">
         <Columns>
             <asp:BoundField DataField="majorID" HeaderText="Major ID" InsertVisible="False" SortExpression="majorID" />
@@ -16,20 +16,20 @@
     <hr />
     <br />
 
-    <asp:DetailsView ID="DetailsView1" runat="server" CssClass="table table-bordered table-hover table-striped" DefaultMode="Insert" 
+    <asp:DetailsView ID="DetailsView1" runat="server" CssClass="table table-bordered table-hover table-striped" DefaultMode="Insert"
         Height="50px" Width="400px" AutoGenerateRows="False" DataKeyNames="majorID" DataSourceID="SqlDSMajorInsert">
         <Fields>
             <%-- MAJOR ID --%>
-            <asp:BoundField DataField="majorID" HeaderText="Major ID" InsertVisible="True" ReadOnly="True" SortExpression="majorID" >
-            <controlstyle cssclass="form-control form-control-sm"></controlstyle>
+            <asp:BoundField DataField="majorID" HeaderText="Major ID" InsertVisible="True" ReadOnly="True" SortExpression="majorID">
+                <ControlStyle CssClass="form-control form-control-sm"></ControlStyle>
             </asp:BoundField>
             <%-- MAJOR CODE --%>
-            <asp:BoundField DataField="majorCode" HeaderText="Major Code" SortExpression="majorCode" >
-            <controlstyle cssclass="form-control form-control-sm"></controlstyle>
+            <asp:BoundField DataField="majorCode" HeaderText="Major Code" SortExpression="majorCode">
+                <ControlStyle CssClass="form-control form-control-sm"></ControlStyle>
             </asp:BoundField>
             <%-- MAJOR NAME --%>
-            <asp:BoundField DataField="majorName" HeaderText="Major Name" SortExpression="majorName" >
-            <controlstyle cssclass="form-control form-control-sm"></controlstyle>
+            <asp:BoundField DataField="majorName" HeaderText="Major Name" SortExpression="majorName">
+                <ControlStyle CssClass="form-control form-control-sm"></ControlStyle>
             </asp:BoundField>
             <%-- COURSE --%>
             <asp:TemplateField HeaderText="Course Name" SortExpression="courseID">
@@ -37,7 +37,7 @@
                     <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("courseID") %>'></asp:TextBox>
                 </EditItemTemplate>
                 <InsertItemTemplate>
-                    <asp:DropDownList ID="ddlCourseId" runat="server" DataSourceID="SqlDSCourse" 
+                    <asp:DropDownList ID="ddlCourseId" runat="server" DataSourceID="SqlDSCourse"
                         CssClass="form-select form-select-sm" AppendDataBoundItems="True"
                         DataTextField="courseName" DataValueField="courseID" SelectedValue='<%# Bind("courseID") %>'>
                     </asp:DropDownList>
@@ -51,15 +51,15 @@
         </Fields>
     </asp:DetailsView>
 
-    <asp:SqlDataSource ID="SqlDSMajorInsert" runat="server" 
-        ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
-        InsertCommand="INSERT INTO tblCouseMajor(majorID, majorCode, majorName, courseID) VALUES (?, ?, ?, ?)" 
-        ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" 
+    <asp:SqlDataSource ID="SqlDSMajorInsert" runat="server"
+        ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
+        InsertCommand="INSERT INTO tblCouseMajor(majorID, majorCode, majorName, courseID) VALUES (?, ?, ?, ?)"
+        ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>"
         SelectCommand="SELECT majorID, majorCode, majorName, courseID FROM tblCouseMajor"></asp:SqlDataSource>
 
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
-        ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
-        ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" 
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server"
+        ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
+        ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>"
         SelectCommand="SELECT  tblCouseMajor.majorID, tblCouseMajor.majorCode, tblCouseMajor.majorName, tblCourse.courseName FROM (tblCouseMajor INNER JOIN tblCourse ON tblCouseMajor.courseID = tblCourse.courseID)"></asp:SqlDataSource>
 
 </asp:Content>
