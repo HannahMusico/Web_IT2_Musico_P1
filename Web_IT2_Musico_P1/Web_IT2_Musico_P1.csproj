@@ -145,6 +145,7 @@
     <Content Include="MyPageMusico.aspx" />
     <Content Include="MyPrelimExam.aspx" />
     <Content Include="RoleInfoPage.aspx" />
+    <Content Include="RolePsge.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -206,6 +207,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="UserInfoPage.aspx" />
+    <Content Include="UserPage.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -302,6 +304,13 @@
     <Compile Include="RoleInfoPage.aspx.designer.cs">
       <DependentUpon>RoleInfoPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="RolePsge.aspx.cs">
+      <DependentUpon>RolePsge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RolePsge.aspx.designer.cs">
+      <DependentUpon>RolePsge.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -322,6 +331,13 @@
     </Compile>
     <Compile Include="UserInfoPage.aspx.designer.cs">
       <DependentUpon>UserInfoPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPage.aspx.cs">
+      <DependentUpon>UserPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPage.aspx.designer.cs">
+      <DependentUpon>UserPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
