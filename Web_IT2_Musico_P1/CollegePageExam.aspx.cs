@@ -7,42 +7,38 @@ using System.Web.UI.WebControls;
 
 namespace Web_IT2_Musico_P1
 {
-    public partial class CollegePage : System.Web.UI.Page
+    public partial class CollegePageExam : System.Web.UI.Page
     {
-
         protected void Page_Load(object sender, EventArgs e)
         {
-            DetailsView2.Visible = false;
+            DetailsView1.Visible = false;
             GridView1.Visible = true;
-
-
         }
 
-        protected void DetailsView2_ItemInserted(object sender, DetailsViewInsertedEventArgs e)
+        protected void DetailsView1_ItemInserted(object sender, DetailsViewInsertedEventArgs e)
         {
             Response.Redirect(Request.RawUrl);
         }
-        //Click Edit, show details view and hide gridview
-        protected void lbtnEditDV_Click(object sender, EventArgs e)
+
+        protected void lbtnEditfDV_Click(object sender, EventArgs e)
         {
-            DetailsView2.DefaultMode = DetailsViewMode.Edit;
-            DetailsView2.Visible = true;
+            DetailsView1.DefaultMode = DetailsViewMode.Edit;
+            DetailsView1.Visible = true;
             GridView1.Visible = false;
         }
-        //Refresh
-        protected void DetailsView2_ItemUpdated(object sender, DetailsViewUpdatedEventArgs e)
+
+        protected void DetailsView1_ItemUpdated(object sender, DetailsViewUpdatedEventArgs e)
         {
-            //Response.Write("<script>alert('Record updated.'</script>");
             Response.Redirect(Request.RawUrl);
         }
-        //Add
+
         protected void btnAddNewRecord_Click(object sender, EventArgs e)
         {
-            DetailsView2.DefaultMode = DetailsViewMode.Insert;
-            DetailsView2.Visible = true;
+            DetailsView1.DefaultMode = DetailsViewMode.Insert;
+            DetailsView1.Visible = true;
             GridView1.Visible = false;
         }
-        //Check
+
         protected void btnCheckAll_Click(object sender, EventArgs e)
         {
             foreach (GridViewRow gRow in GridView1.Rows)
@@ -51,7 +47,7 @@ namespace Web_IT2_Musico_P1
                 ckRowSel.Checked = true;
             }
         }
-        //Uncheck
+
         protected void btnUncheckAll_Click(object sender, EventArgs e)
         {
             foreach (GridViewRow gRow in GridView1.Rows)
@@ -60,7 +56,7 @@ namespace Web_IT2_Musico_P1
                 ckRowSel.Checked = false;
             }
         }
-        //Delete
+
         protected void btnDelete_Click(object sender, EventArgs e)
         {
             int count = 0;

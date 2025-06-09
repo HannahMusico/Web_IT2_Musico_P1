@@ -11,7 +11,7 @@ namespace Web_IT2_Musico_P1
 {
 
 
-    public partial class CollegePage
+    public partial class CollegePageExam
     {
 
         /// <summary>
@@ -69,12 +69,21 @@ namespace Web_IT2_Musico_P1
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDSCollegeGV;
 
         /// <summary>
-        /// DetailsView2 control.
+        /// DetailsView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DetailsView DetailsView2;
+        protected global::System.Web.UI.WebControls.DetailsView DetailsView1;
+
+        /// <summary>
+        /// SqlDSCollegeDV control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDSCollegeDV;
     }
 }
